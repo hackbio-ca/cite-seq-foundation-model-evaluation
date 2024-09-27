@@ -9,7 +9,7 @@ Thank you for your interest in contributing to `cite-seq-foundation-model-evalua
 2. **Clone your fork**: Clone your forked repository to your local development environment.
 
     ```bash
-    git clone https://github.com/cite-seq-foundation-model-evaluation/cite-seq-foundation-model-evaluation.git
+    git clone https://github.com/hackbio-ca/cite-seq-foundation-model-evaluation.git
     ```
 
 3. **Create a new branch**: Create a new branch for your changes. Use a descriptive branch name that indicates the work you are doing.
