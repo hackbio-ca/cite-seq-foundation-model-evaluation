@@ -1,4 +1,4 @@
-# cite-seq-foundation-model-evaluation
+# Surface protein abundance prediction from RNA expression - an analysis and benchmark
 
 Evaluate foundation models on CITE-seq data for RNA sequences and RNA abundances.
 
