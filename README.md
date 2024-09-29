@@ -2,6 +2,8 @@
 
  <img src="static/citeseq.png" height="250px" align="right"/>
 
+#### Toronto Bioinformatics Hackathon 2024 - Philip Fradkin, Cait Harrigan, Hassaan Maan
+
 We aim to evaluate the mutual information between RNA expression and surface protein abundance through a large CITE-seq dataset of peripheral blood mononuclear cells (PBMCs). CITE-seq combines these two measurements such that RNA expression and surface protein abundance measurements are sampled for the same cells. Further, we evaluate foundation models on CITE-seq data to determine if zero-shot representations in these models can allow for more accurate prediction of protein abundance from RNA expression. Our analysis offers a unique perspective on this prediction task by determining real bounds on mutual information and evaluating the performance of cutting-edge foundation models on this task. 
 
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
@@ -46,7 +48,6 @@ python train.py --config_file [config_file.yaml] \
     --seed 3023 \
     --linear_model=true \
     --note_suffix="_linear" \
-
 ```
 
 We recommend using a GPU for training the models. The configuration files can be found in the `configs` folder.
