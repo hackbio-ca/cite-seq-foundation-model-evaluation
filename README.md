@@ -1,12 +1,12 @@
 # Surface protein abundance prediction from RNA expression - an analysis and benchmark
 
-Evaluate foundation models on CITE-seq data for RNA sequences and RNA abundances.
+We aim to evaluate the mutual information between RNA expression and surface protein abundance through a large CITE-seq dataset of peripheral blood mononuclear cells (PBMCs). CITE-seq combines these two measurements such that RNA expression and surface protein abundance measurements are sampled for the same cells. Further, we evaluate foundation models on CITE-seq data to determine if zero-shot representations in these models can allow for more accurate prediction of protein abundance from RNA expression. Our analysis offers a unique perspective on this prediction task by determining real bounds on mutual information and evaluating the performance of cutting-edge foundation models on this task. 
 
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
 ## Abstract
 
-Evaluate foundation models on CITE-seq data for RNA sequences and RNA abundances.
+THe relationships between the different levels of information in the central dogma hold important answers in our understanding of biology and disease. Although multi-modal measurements for sequencing data have become increasingly common, the mutual information and covariation between these modalities is often difficult to quantify and varies based on cell and tissue context. Previous approaches to predicting protein expression from RNA have relied on specialized models that transform the space between one modality to another. However, this does not answer fundamental questions about their relationships. In this work, we aim to explicitly determine information bounds between RNA and surface protein expression through a large CITE-seq dataset of peripheral blood mononuclear cells (PBMCs) that jointly measures both modalities in single-cells. After determining that mutual information can be improved through incorporating foundation model embeddings, we evaluate both single-cell and sequence-based foundation models in the surface protein prediction task. Our analysis offers a unique perspective on this prediction task by determining real bounds on mutual information and evaluating the performance of cutting-edge foundation models in a novel scenario with real-world applications, such as the study of disease mechanisms and developing RNA-based therapeutics and diagnostics.
 
 ## Installation
 
