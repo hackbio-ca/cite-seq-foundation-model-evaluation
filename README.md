@@ -28,43 +28,28 @@ conda activate cite_seq
 
 As the CITE-seq data needs a lot of processing, and the embeddings for scGPT, Orthrus and ESM2 are ardous to generate, we provide a MuonData file that contains the gene expression (SCT), surface protein abundance (ADT), scGPT embeddings, Orthrus embeddings, and ESM2 embeddings. The original CITE-seq data can be found [here](https://atlas.fredhutch.org/nygc/multimodal-pbmc/) in the downloads section.
 
-```python
+The fully processed MuonData object can be downloaded from [here](https://drive.google.com/file/d/1H8L7eaLkcHthNa7McQKfAQLrHwkFxOIO/view?usp=sharing).
 
-Provide a basic usage example or minimal code snippet that demonstrates how to use the project.
-
-```python
-# Example usage (Python)
-import my_project
-
-demo = my_project.example_function()
-print(demo)
-```
-```r
-# Example usage (R)
-library(my_project)
-
-demo <- example_function()
-print(demo)
-```
-
-## Usage
-
-Add detailed information and examples on how to use the project, covering its major features and functions.
+To run the analysis notebooks for mutual information, notebooks 04-06 can be run in order. A GPU is recommended and the `cite_seq` environment should be used. 
 
 ```python
-# More usage examples (Python)
-import my_project
-
-demo = my_project.advanced_function(parameter1='value1')
-print(demo)
+# For example
+jupyter notebook notebooks/04_mi_test_citeseq_adt_sct.ipynb
 ```
-```r
-# More usage examples (R)
-library(demoProject)
 
-demo <- advanced_function(parameter1 = "value1")
-print(demo)
+Other analysis notebooks in `notebooks` can be run in a similar manner.
+
+To run the experiments for the foundation models for prediction of surface protein (ADT) from gene expression (SCT), a configuration file from `configs` can be used:
+
+```python
+python train.py --config_file [config_file.yaml] \
+    --seed 3023 \
+    --linear_model=true \
+    --note_suffix="_linear" \
+
 ```
+
+We recommend using a GPU for training the models. The configuration files can be found in the `configs` folder.
 
 ## Contribute
 

@@ -1,0 +1,27 @@
+data:
+  highly_variable_genes: False
+  sc_gpt_embedding: True
+  orthrus_embedding: False
+  esm_embedding: True
+  data_path: '/projects/isoclr/cite_seq_with_seq_embed_with_cell_embed.h5mu'
+  split_type: 'genes'
+  n_hvg: 2500
+  mini: False
+
+model:
+  hidden_dim: 16
+  num_layers: 3
+  output_dim: 1
+
+training:
+  batch_size: 2048
+  learning_rate: 0.001
+  max_epochs: 10
+  min_delta: 0.00
+  patience: 5
+  weight_decay: 0.001
+  gradient_clip_val: 0.5
+
+logging:
+  project_name: 'cite_seq'
+  notes: 'scgpt'
