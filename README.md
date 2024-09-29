@@ -1,4 +1,6 @@
-# Surface protein abundance prediction from RNA expression - an analysis and benchmark
+# Surface protein abundance prediction from RNA expression - an analysis and benchmark of foundation models
+
+ <img src="static/citeseq.png" height="250px" align="right"/>
 
 We aim to evaluate the mutual information between RNA expression and surface protein abundance through a large CITE-seq dataset of peripheral blood mononuclear cells (PBMCs). CITE-seq combines these two measurements such that RNA expression and surface protein abundance measurements are sampled for the same cells. Further, we evaluate foundation models on CITE-seq data to determine if zero-shot representations in these models can allow for more accurate prediction of protein abundance from RNA expression. Our analysis offers a unique perspective on this prediction task by determining real bounds on mutual information and evaluating the performance of cutting-edge foundation models on this task. 
 
@@ -10,17 +12,23 @@ THe relationships between the different levels of information in the central dog
 
 ## Installation
 
-Provide instructions on how to install and set up the project, such as installing dependencies and preparing the environment.
+Conda is necessary to install the necessary dependencies for this project. To install Conda, follow the instructions [here](https://docs.conda.io/projects/conda/en/latest/user-guide/install/index.html).
+
+To install the necessary libaries and dependencies, run the following commands after installing conda:
 
 ```bash
-# Example command to install dependencies (Python)
-pip install project-dependencies
+# Install the dependencies from the env.yaml file
+conda env create -f env.yaml
 
-# Example command to install dependencies (R)
-install.packages("project-dependencies")
+# Activate the environment
+conda activate cite_seq
 ```
 
 ## Quick Start
+
+As the CITE-seq data needs a lot of processing, and the embeddings for scGPT, Orthrus and ESM2 are ardous to generate, we provide a MuonData file that contains the gene expression (SCT), surface protein abundance (ADT), scGPT embeddings, Orthrus embeddings, and ESM2 embeddings. The original CITE-seq data can be found [here](https://atlas.fredhutch.org/nygc/multimodal-pbmc/) in the downloads section.
+
+```python
 
 Provide a basic usage example or minimal code snippet that demonstrates how to use the project.
 
