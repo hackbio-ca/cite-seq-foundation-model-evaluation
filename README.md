@@ -1,5 +1,7 @@
 # Surface protein abundance prediction from RNA expression - an analysis and benchmark of foundation models
 
+## 🥈 Winner of the Runner Up award!
+
  <img src="static/citeseq.png" height="250px" align="right"/>
 
 #### Toronto Bioinformatics Hackathon 2024 - Philip Fradkin, Cait Harrigan, Hassaan Maan
