@@ -1,5 +1,7 @@
 # Surface protein abundance prediction from RNA expression - an analysis and benchmark of foundation models
 
+** Toronto Bioinformatics Hackathon, 2024**
+
 ## 🥈 Winner of the Runner Up award!
 
  <img src="static/citeseq.png" height="250px" align="right"/>
